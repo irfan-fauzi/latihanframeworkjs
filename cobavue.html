@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>belajar fungsi</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.common.dev.js"></script>
+</head>
+
+<body>
+  <div id="spa">
+    <div class="jumbotron jumbotron-fluid p-3">
+      <h1 class="display-4 text-center">{{ teks_yang_reaktif?teks_yang_reaktif:'Hmmmm...' }}</h1>
+      <hr class="my-4" />
+      <p class="lead text-center"><input type="text" class="form-control" v-model="teks_yang_reaktif" /></p>
+    </div>
+  </div>
+
+  <script>
+    var spa = new Vue({
+      el: '#spa',
+      data: {
+        teks_yang_reaktif: 'Sebuah Teks yang Reaktif!'
+      }
+    })
+  </script>
+
+
+
+</body>
+
+</html>
